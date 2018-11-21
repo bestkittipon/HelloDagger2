@@ -16,7 +16,7 @@ class MainActivity : BaseActivity() ,  MainContract.View {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        presenter.refresh()
+        presenter.refresh(true)
     }
 
 
@@ -28,5 +28,9 @@ class MainActivity : BaseActivity() ,  MainContract.View {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.content_container2, Main2Fragment.newInstance())
         }.commit()
+    }
+
+    override fun showError() {
+
     }
 }

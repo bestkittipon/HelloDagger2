@@ -5,9 +5,11 @@ interface MainContract {
 
     interface View {
         fun showLoading()
+
+        fun showError()
     }
 
     interface UserActionListener {
-        fun refresh()
+        fun refresh(result: Boolean)
     }
 }
