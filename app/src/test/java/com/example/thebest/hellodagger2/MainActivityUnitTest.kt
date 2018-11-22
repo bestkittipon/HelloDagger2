@@ -1,8 +1,8 @@
 package com.example.thebest.hellodagger2
 
+import com.example.thebest.hellodagger2.main.presenter.MainPresenter
+import com.example.thebest.hellodagger2.main.view.MainContract
 import com.example.thebest.hellodagger2.util.ApiService
-import com.nutron.daggerandroidinjection.presentation.main.MainContract
-import com.nutron.daggerandroidinjection.presentation.main.MainPresenter
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock

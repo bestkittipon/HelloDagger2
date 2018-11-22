@@ -8,9 +8,7 @@ class MainFragmentPresenter(val view: MainFragmentContract.View,
                             val api: ApiService) : MainFragmentContract.UserActionListener {
 
     override fun loadData() {
-        api.loadData()
         view.showDetail()
-        //TODO: add some stuffs
     }
 
 }
